@@ -38,6 +38,39 @@ TextureImporter:
   - first:
       213: -1004220501175369820
     second: spikes_03
+  - first:
+      213: 338810396420629356
+    second: column_001
+  - first:
+      213: 908226665172136826
+    second: column_002
+  - first:
+      213: -5706751262184213634
+    second: column_003
+  - first:
+      213: 466035467887198288
+    second: platform_altar_001
+  - first:
+      213: -7535984141955879935
+    second: fill_black_001
+  - first:
+      213: 6053488267747052805
+    second: platform_mid_004
+  - first:
+      213: -4997340915315376626
+    second: platform_hill_001
+  - first:
+      213: 6952552133180617418
+    second: platform_slope_001
+  - first:
+      213: -8013697636170507342
+    second: fill_pattern_001
+  - first:
+      213: 2556003508114971828
+    second: wall_edge_001
+  - first:
+      213: -418600334569417129
+    second: platform_hill_002
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -255,6 +288,258 @@ TextureImporter:
       bones: []
       spriteID: 9ad078ef3c2f23c4ea4fcdfe095f61fb
       internalID: -1004220501175369820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_mid_001
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 894
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef2dc6cccd70974e8cf066a64da355b
+      internalID: -5726974190085970374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: column_001
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 752
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357f0e97d06bd09478ed567675ea8fa6
+      internalID: 338810396420629356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: column_002
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 752
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9959695ef17ef4f916db9b27227b8d
+      internalID: 908226665172136826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: column_003
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 752
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f89444bde1304945910eaa9f1aa59b2
+      internalID: -5706751262184213634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_altar_001
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 80
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c965820109c3c00479b119f9ce507746
+      internalID: 466035467887198288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fill_black_001
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168b8b228fa437f4689e687dea9c5680
+      internalID: -7535984141955879935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_mid_004
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 576
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce558c4e8341dc429388b11e0e0e559
+      internalID: 6053488267747052805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_hill_001
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 624
+        width: 96
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bd0bdaa1889d8439008c29cada9d90
+      internalID: -4997340915315376626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_slope_001
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 447
+        width: 51
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dcb9365223f4c42b05aad7e5903715
+      internalID: 6952552133180617418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fill_pattern_001
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab3bb74eedd0ee4d86006ebcc128101
+      internalID: -8013697636170507342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_edge_001
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 576
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92da3b47deeae324b9598906674db6e4
+      internalID: 2556003508114971828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_hill_002
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 944
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf192c8be9682b4f993955360e9b88d
+      internalID: -418600334569417129
       vertices: []
       indices: 
       edges: []
