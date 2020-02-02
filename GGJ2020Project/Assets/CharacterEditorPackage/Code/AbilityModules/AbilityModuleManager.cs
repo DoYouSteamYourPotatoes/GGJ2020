@@ -5,7 +5,8 @@ using System.Collections;
 //The CharacterControllerBase class controls this and asks if there are any applicable modules.
 //Starting, running and ending AbilityModules is done through here, but the current abilitymodule can be requested to get information from.
 //--------------------------------------------------------------------
-public class AbilityModuleManager : MonoBehaviour {
+public class AbilityModuleManager : MonoBehaviour
+{
     [SerializeField] AbilitySlot[] m_AbilitySlots;
     Transform m_ModuleParent;
     AbilityModule[] m_AbilityModules;
@@ -28,7 +29,7 @@ public class AbilityModuleManager : MonoBehaviour {
         {
             return null;
         }
-        for (int i = 0; i < m_AbilityModules.Length; i ++)
+        for (int i = 0; i < m_AbilityModules.Length; i++)
         {
             if (m_AbilityModules[i].GetName() == a_Name)
             {
@@ -38,9 +39,25 @@ public class AbilityModuleManager : MonoBehaviour {
         return null;
     }
 
+    public AbilityModule GetModuleWithID(Manager_GameLogic.eAbilities abilityID)
+    {
+        if (m_AbilityModules == null)
+        {
+            return null;
+        }
+        for (int i = 0; i < m_AbilityModules.Length; i++)
+        {
+            if (m_AbilityModules[i].abilityID.Equals(abilityID))
+            {
+                return m_AbilityModules[i];
+            }
+        }
+        return null;
+    }
+
     public void ApplyAbilityUnlockList(AbilityUnlockList a_List)
     {
-        for (int i = 0; i < a_List.m_List.Length; i ++)
+        for (int i = 0; i < a_List.m_List.Length; i++)
         {
             AbilityModule module = GetModuleWithName(a_List.m_List[i].m_AbilityName);
             if (module != null)
@@ -53,7 +70,7 @@ public class AbilityModuleManager : MonoBehaviour {
             }
         }
     }
-    
+
     public void InitAllModules(CharacterControllerBase a_CharacterController)
     {
         m_ModuleParent = (new GameObject()).transform;
@@ -61,7 +78,7 @@ public class AbilityModuleManager : MonoBehaviour {
         m_ModuleParent.parent = transform;
         m_CharacterController = a_CharacterController;
         int actualAbilityModules = 0;
-        for (int i = 0; i < m_AbilitySlots.Length; i ++)
+        for (int i = 0; i < m_AbilitySlots.Length; i++)
         {
             if (m_AbilitySlots[i].m_AbilityModulePrefab != null)
             {
@@ -105,7 +122,7 @@ public class AbilityModuleManager : MonoBehaviour {
 
     public void UpdateInactiveModules()
     {
-        for (int i = 0; i < m_AbilityModules.Length; i ++)
+        for (int i = 0; i < m_AbilityModules.Length; i++)
         {
             if (!m_AbilityModules[i].GetIsActive())
             {
@@ -117,7 +134,7 @@ public class AbilityModuleManager : MonoBehaviour {
     public void FixedUpdateCurrentModule()
     {
         if (m_CurrentlyUsedModule != null)
-        { 
+        {
             m_CurrentlyUsedModule.FixedUpdateModule();
             m_CurrentlyUsedModule.PlaceMovingColPoint();
         }

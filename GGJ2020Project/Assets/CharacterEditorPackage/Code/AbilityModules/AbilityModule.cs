@@ -5,7 +5,9 @@ using System.Collections;
 //Base class for all ability modules. Stores information about name, priority, and being active. Provides the handles to deal with ability modules.
 //--------------------------------------------------------------------
 [System.Serializable]
-public class AbilityModule : MonoBehaviour {
+public class AbilityModule : MonoBehaviour
+{
+    public Manager_GameLogic.eAbilities abilityID = Manager_GameLogic.eAbilities.None;
     [SerializeField] int m_Priority;
     [SerializeField] string m_ModuleName;
     protected bool m_IsActive;
@@ -15,6 +17,30 @@ public class AbilityModule : MonoBehaviour {
     //Called once when instantiating the ability module
     public virtual void InitModule(CharacterControllerBase a_CharacterControllerBase)
     {
+        switch (m_ModuleName)
+        {
+            case "WallJump":
+                abilityID = Manager_GameLogic.eAbilities.WallJump;
+                break;
+            case "WallSlide":
+                abilityID = Manager_GameLogic.eAbilities.WallSlide;
+                break;
+            case "NetClimb":
+                abilityID = Manager_GameLogic.eAbilities.NetClimb;
+                break;
+            case "DropDown":
+                abilityID = Manager_GameLogic.eAbilities.DropDown;
+                break;
+            case "DoubleJump":
+                abilityID = Manager_GameLogic.eAbilities.DoubleJump;
+                break;
+            case "Swim":
+                abilityID = Manager_GameLogic.eAbilities.Swim;
+                break;
+            default:
+                break;
+        }
+
         if (a_CharacterControllerBase == null)
         {
             Debug.LogError("Character controller not found for " + GetName() + "!");
@@ -120,7 +146,7 @@ public class AbilityModule : MonoBehaviour {
     {
         return true;
     }
-    
+
     public bool GetIsActive()
     {
         return m_IsActive;
@@ -141,8 +167,8 @@ public class AbilityModule : MonoBehaviour {
     {
         return m_ModuleName;
     }
-	public virtual Vector2 GetCurrentVisualUp()
-	{
-		return Vector2.up;
-	}
+    public virtual Vector2 GetCurrentVisualUp()
+    {
+        return Vector2.up;
+    }
 }
