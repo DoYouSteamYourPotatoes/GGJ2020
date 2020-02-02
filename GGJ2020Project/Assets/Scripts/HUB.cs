@@ -61,7 +61,8 @@ public class HUB : MonoBehaviour
 
     public void MoveNPCToSlot(NPC.eNPCType npcType)
     {
-        Vector3 targetPos = list_npcSlots[(int)npcType].transform.position;
+        int index = (int)npcType;
+        Vector3 targetPos = list_npcSlots[index].transform.position;
         GameObject goNPC = list_NPCs.Find(entry => entry.npcType.Equals(npcType)).gameObject;
         targetPos.y += goNPC.transform.localScale.y / 2.0f;
         goNPC.transform.position = targetPos;
