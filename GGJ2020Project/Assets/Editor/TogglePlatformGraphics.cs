@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.Tilemaps;
 
 public class TogglePlatformGraphics
 {
@@ -52,7 +53,7 @@ public class TogglePlatformGraphics
 
     private static void RecursiveEnableGraphics(GameObject go, bool enable)
     {
-        SpriteRenderer spriteRendererRef = go.GetComponent<SpriteRenderer>();
+        TilemapRenderer spriteRendererRef = go.GetComponent<TilemapRenderer>();
         if (spriteRendererRef != null)
         {
             spriteRendererRef.enabled = enable;
