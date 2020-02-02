@@ -257,7 +257,7 @@ public class NPC_1 : NPC
             float t = timer / 2.5f;
             t = t * t * t * (t * (6f * t - 15f) + 10f);
             go_fragmentDash.transform.position = Vector3.Lerp(startPos, endPos, t);
-            go_fragmentDash.transform.Rotate(new Vector3(0.0f, t, 0.0f));
+            go_fragmentDash.transform.Rotate(new Vector3(0.0f, 0.0f, t));
             yield return null;
         }
         ref_companion.enabled = false;
