@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetButtonDown("Interact"))
         {
             if (list_npcs.Count > 0)
             {

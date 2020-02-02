@@ -225,6 +225,7 @@ public class NPC_1 : NPC
             ref_main.gameObject.transform.position = Vector3.Lerp(startPos, endPos, t);
             yield return null;
         }
+        FindObjectOfType<HUB>().MoveNPCToSlot(eNPCType.Dash);
         yield return new WaitForSeconds(pause);
         timer = 0.0f;
         startPos = target.position;

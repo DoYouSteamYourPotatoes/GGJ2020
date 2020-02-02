@@ -6,11 +6,13 @@ public class NPC : MonoBehaviour
 {
     public enum eNPCType
     {
-        NONE = 0,
-        Dash,
+        Dash=0,
         DoubleJump,
         Hook,
-        Final
+        Final,
+
+
+        NONE = 100
     }
     public eNPCType npcType = eNPCType.NONE;
 
